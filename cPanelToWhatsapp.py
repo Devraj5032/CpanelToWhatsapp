@@ -123,7 +123,7 @@ def job():
                 shutil.move(filepath, os.path.join(processed_folder, filename))
             else:
                 # Move the file to a different folder for images without the desired class
-                no_class_folder = 'C:/Users/Dev50/Desktop/GreenQuest/imageCrop/noClassImages'
+                no_class_folder = 'public_html/MovedImages'
                 os.makedirs(no_class_folder, exist_ok=True)
                 shutil.move(filepath, os.path.join(no_class_folder, filename))
 
